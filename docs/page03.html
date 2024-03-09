@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PNR Enquiry</title>
+</head>
+<style>
+    #top {
+        background-color: rgb(48, 184, 238);
+        color: white;
+        padding: 10px;
+        margin: 0%;
+    }
+
+    #top ul {
+        list-style-type: none;
+
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    #top li:first-child {
+        margin-left: 17%;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #top1 {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: black;
+        padding: 10px;
+        margin: 0%;
+    }
+
+    #top1 p {
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #side{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #buttons ul{
+        display: flex;
+        flex-direction: column;
+        width:200%
+    }
+
+    #buttons li{
+        background-color: rgb(203, 203, 203);
+        padding: 10px;
+        margin: 2px;
+    }
+
+    #enquiry {
+        width:60%;
+        background-color: #f2f2f2;
+        margin-left: 0px ;
+        padding: 20px;
+        align-items: center;
+    }
+
+    #enquiry h1 {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+        background-color:rgb(63, 194, 246);
+        text-align: center;
+    }
+    #enquiry p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-left: 7%;
+        margin-right: 18%;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+
+    #but{
+        margin-left:50%;
+    }
+    button {
+        width: 15%;
+        padding: 10px;
+        background-color: orange;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    hr{
+        margin-top: 10%;
+    }
+    #disha {
+        margin-left: 2%;
+        margin-top: 20px;
+        height: 90px;
+        position: fixed;
+
+    }
+</style>
+
+<body>
+    <div id="top">
+        <ul>
+            <li><a href="#">Indian Railway Enquiry</a></li>
+            <li><a href="#">PNR Enquiry</a></li>
+            <li><a href="#">Train Between Stations</a></li>
+            <li><a href="#">Seat Availability</a></li>
+            <li><a href="#">Fare Enquiry</a></li>
+            <li><a href="#">Train Schedule</a></li>
+        </ul>
+    </div>
+    <div id="top1">
+        <img src="https://www.indianrail.gov.in/enquiry/images/rail.gif">
+        <p>INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY</p>
+        <img src="https://www.indianrail.gov.in/enquiry/images/india.gif">
+    </div>
+    <div id="side">
+        <div id="buttons">
+            <ul>
+                <li>Services</li>
+                <li>Information</li>
+            </ul>
+        </div>
+        <div id="enquiry">
+            <h1>Passenger Current Status Enquiry</h1>
+            <p>Enter the PNR for your booking below to get the current status.
+                You will find it on the top left corner of the ticket.</p>
+            <form action="index.html">
+                <label for="pnr">Enter PNR Number:</label>
+                <input type="text" id="pnr" name="pnr" required placeholder="Enter PNR No.">
+                <div id="but"><button type="submit">Submit</button>
+                <button>Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <img id="disha" src="https://sdk.irctc.corover.ai/askdisha-bucket/launcher.gif">
+</body>
+
+</html>

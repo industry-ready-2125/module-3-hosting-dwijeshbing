@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+</head>
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f2f2f2;
+		margin: 0;
+		padding: 0;
+	}
+	.f1{
+		margin-left: 20%;
+		display: flex;
+		justify-content: space-between;
+	
+	}
+
+	.container {
+		width: auto;
+		height: ao;
+		background-color: #fff;
+		margin: 50px auto;
+		padding: 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 5px 8px rgba(0, 0, 0, 1);
+	}
+
+	h1 {
+		text-align: center;
+		margin-top: 0;
+		text-decoration: solid;
+	}
+
+	label {
+		display: block;
+		margin-top: 10px;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		margin-top: 5px;
+	}
+
+	button[type="submit"] {
+		width: 100%;
+		padding: 10px;
+		background-color: orange;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+
+	a {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+		color: #007bff;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.sub-container {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.sub-container button {
+		width: 48%;
+		padding: 10px;
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+</style>
+
+<body>
+	<div class="f1">
+		<div class="container">
+			<h1>Login</h1>
+			<form action="index.html">
+				<label for="username">User Name</label>
+				<input type="text" id="username" name="username" required>
+
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+				<p>
+					<a href="#">Forgot account details?</a>
+				</p>
+				<input type="checkbox"> Login & Book using OTP
+				<button type="submit">LOGIN</button>
+				<div class="sub-container">
+					<button>Register</button>
+					<button>Agent Login</button>
+				</div>
+			</form>
+		</div>
+		<div class="ads">
+			<a href="https://www.irctctourism.com/" style="margin-top: 50px; margin-left: 50px;"><img src="ads.jpg" alt="ads" style="width: 50%; height: 80%;"></a>
+		</div>
+	</div>
+</body>
+
+</html>
